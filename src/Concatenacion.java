@@ -6,6 +6,7 @@ public class Concatenacion {
 
         int edad = 20;
 
+        int edad2 = 22;
         //condicional
         if (edad >= 18){
             System.out.println("Si es mayor de edad");
