@@ -1,6 +1,6 @@
 public class BucleForEach {
     public static void main(String[] args) {
-        String[] nombres = {"Ana", "Luis", "Jordy", "Jean Pierre"};
+        String[] nombres = {"Ana", "Luis", "Jordy", "Jean Pierre", "Carlos"};
 
         for(String n: nombres){
             System.out.println(n);
