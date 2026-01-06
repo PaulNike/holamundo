@@ -72,6 +72,30 @@ public class BasicArrays {
 
         /**================EJERCICIO 5=======================*/
 
-        char[] vocales = {'p','r','o','g','r','a','m','a','c','i','o','n'};
+        int catn = 0;
+        int cat =0;
+        //char[] vocales = {'p', 'r', 'o', 'g', 'r', '1', 'c', 'i', 'o', 'n'};
+
+        char[] letras = {'p','r','o','g','r','A','m','A','c','1','o','n'};
+        // imprimir cantidad de vocales y cantidad de consonantes
+        int vocales=0;
+        int consonantes=0;
+        char letr;
+
+        for (int j=0; j<letras.length; j++) {
+            letr = letras[j];
+
+            if(letr >= 'a' && letr <='z')
+            if (Character.isLetter(letras[j])) {
+                letr = Character.toLowerCase(letras[j]);
+                if (letr == 'a' || letr == 'e' || letr == 'i' || letr == 'o' || letr == 'u') {
+                    vocales++;
+                } else {
+                    consonantes++;
+                }
+            }
+        }
+        System.out.println("Vocales:" + vocales);
+        System.out.println("Consonantes:" + consonantes);
     }
 }
